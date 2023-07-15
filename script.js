@@ -46,11 +46,25 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+let playerScore = 0;
+let computerScore = 0;
+
 for (let i = 0; i < 5; i++) {
   let computerChoice = getComputerChoice();
   let playerChoice = getPlayerChoice();
   let winner = playRound(playerChoice, computerChoice);
+
+  if (winner == 1) {
+    alert("Player Won");
+    ++playerScore;
+  } else if (winner == 0) {
+    alert("Computer Won");
+    ++computerScore;
+  } else {
+    alert("Its a Tie !");
+  }
+
   alert(
-    winner == 1 ? "Player Won" : winner == -1 ? "Its a tie" : "Computer won"
+    `Current Score - \nPlayer : ${playerScore}\nComputer : ${computerScore}`
   );
 }
