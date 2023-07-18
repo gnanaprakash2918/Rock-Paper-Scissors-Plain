@@ -79,6 +79,11 @@ for (let i = 0; i < arr.length; i++) {
       document.querySelector(
         "body > div:nth-child(3) > div > div.computer > span.computer-score"
       ).textContent = computerScore;
+      if (ties) {
+        ties = 0;
+        const t = document.querySelector("body > div.scores-container.winner");
+        t.removeChild(t.lastChild);
+      }
     } else {
       ties += 1;
       if (ties == 1) {
