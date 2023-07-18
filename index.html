@@ -4,7 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="hero-section">
+        <h1 class="hero-title">Rock Paper Scissors</h1>
+        <h2 class="hero-info">First to 5 Wins !</h2>
+      </div>
+    </header>
+
+    <div class="choice-signs">
+      <div class="image-container">
+        <img
+          src="./Images/Rock.jpg"
+          alt="Rock-sign"
+          usemap="#image-map1"
+          class="rock-img"
+        />
+        <span class="image-caption">Rock</span>
+        <map name="image-map1">
+          <area
+            target=""
+            alt="Rock"
+            title="Rock"
+            href="#"
+            coords="351,478,4,-1"
+            shape="rect"
+          />
+        </map>
+      </div>
+      <div class="image-container">
+        <img
+          src="./Images/Paper.jpg"
+          alt="Paper-sign"
+          usemap="#image-map2"
+          class="paper-img"
+        />
+        <span class="image-caption">Paper</span>
+        <map name="image-map2">
+          <area
+            target=""
+            alt="Paper"
+            title="Paper"
+            href="#"
+            coords="330,435,16,11"
+            shape="rect"
+          />
+        </map>
+      </div>
+
+      <div class="image-container">
+        <img
+          src="./Images/Scissors.jpg"
+          alt="Scissors-sign"
+          usemap="#image-map3"
+          class="scissors-img"
+        />
+        <span class="image-caption">Scissors</span>
+
+        <map name="image-map3">
+          <area
+            target=""
+            alt=""
+            title=""
+            href="#"
+            coords="4,7,354,500"
+            shape="rect"
+          />
+        </map>
+      </div>
+    </div>
+
+    <div class="scores-container">
+      <h3 class="scores-heading">Scores</h3>
+      <div class="scores">
+        <div class="player">
+          <span class="player-name">Player : </span>
+          <span class="player-score">0</span>
+        </div>
+        <div class="computer">
+          <span class="computer-name">Computer : </span>
+          <span class="computer-score">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scores-container winner">
+      <h3 class="scores-heading">Winner</h3>
+      <div class="scores winner">
+        <div class="player">
+          <span class="player-name winner">Player : </span>
+          <span class="player-score winner">Scissors</span>
+        </div>
+        <div class="computer">
+          <span class="computer-name winner">Computer : </span>
+          <span class="computer-score winner">Scissors</span>
+        </div>
+      </div>
+
+      <p class="winner-announce">
+        You chose <span class="player-choice">Scissors</span> and Computer chose
+        <span class="computer-choice">Scissors</span>
+      </p>
+
+      <p class="actual-winner">
+        <span class="actual-winner">Player</span> Won !
+      </p>
+    </div>
+  </body>
 </html>
