@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,13 +22,14 @@
     </header>
 
     <div class="choice-signs">
-      <div class="image-container">
+      <div class="image-container rock">
         <img
           src="./Images/Rock.jpg"
           alt="Rock-sign"
           usemap="#image-map1"
           class="rock-img"
         />
+
         <span class="image-caption">Rock</span>
         <map name="image-map1">
           <area
@@ -41,13 +42,14 @@
           />
         </map>
       </div>
-      <div class="image-container">
+      <div class="image-container paper">
         <img
           src="./Images/Paper.jpg"
           alt="Paper-sign"
           usemap="#image-map2"
           class="paper-img"
         />
+
         <span class="image-caption">Paper</span>
         <map name="image-map2">
           <area
@@ -61,15 +63,15 @@
         </map>
       </div>
 
-      <div class="image-container">
+      <div class="image-container scissors">
         <img
           src="./Images/Scissors.jpg"
           alt="Scissors-sign"
           usemap="#image-map3"
           class="scissors-img"
         />
-        <span class="image-caption">Scissors</span>
 
+        <span class="image-caption">Scissors</span>
         <map name="image-map3">
           <area
             target=""
@@ -109,15 +111,6 @@
           <span class="computer-score winner">Scissors</span>
         </div>
       </div>
-
-      <p class="winner-announce">
-        You chose <span class="player-choice">Scissors</span> and Computer chose
-        <span class="computer-choice">Scissors</span>
-      </p>
-
-      <p class="actual-winner">
-        <span class="actual-winner">Player</span> Won !
-      </p>
     </div>
   </body>
 </html>
