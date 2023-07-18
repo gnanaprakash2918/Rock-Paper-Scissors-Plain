@@ -39,6 +39,13 @@ let playerScore = 0,
   ties = 0,
   rounds = 0;
 
+document.querySelector(
+  "body > div.scores-container.winner > div > div.player > span.player-score.winner"
+).textContent = "";
+document.querySelector(
+  "body > div.scores-container.winner > div > div.computer > span.computer-score.winner"
+).textContent = "";
+
 const divSelector = document.getElementsByClassName("image-container");
 const arr = Array.from(divSelector);
 console.log(arr);
